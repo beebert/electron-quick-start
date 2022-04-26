@@ -1,3 +1,40 @@
 /* styles.css */
 
 /* Add styles here to customize the appearance of your app */
+
+#input-names {
+    display: block;
+}
+
+#output-names {
+    display:block;
+}
+
+#input-label {
+    display: block;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+#output-label {
+    display: block;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.input {
+    display: block;
+    margin: 10px;
+}
+
+
+.output {
+    display: block;
+    margin: 10px;
+}
+
+#clear-button {
+    height: 50px;
+    width: 100px;
+    margin: 15px;
+}

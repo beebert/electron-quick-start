@@ -5,15 +5,23 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
+    <title>Name Parser</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+
+    <div class="input" >
+      <label for="input-names" id="input-label"> Put your name list here:</label>
+      <textarea id="input-names" name="input-names" rows="20" cols="75"></textarea>
+      <button type="button" id="clear-button" onclick="clearButton()">Clear</button>
+    </div>
+    
+    <div class="output">
+      <label for="output-names" id="output-label"> Name Output:</label>
+      <textarea id="output-names" name="output-names" rows="20" cols="75"></textarea>
+    </div>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
